@@ -19,6 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".GroupsMainActivity"></activity>
+        <activity android:name=".PlaceDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
