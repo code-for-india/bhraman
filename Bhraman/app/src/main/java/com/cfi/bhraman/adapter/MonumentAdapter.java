@@ -16,32 +16,33 @@ import java.util.List;
  */
 public class MonumentAdapter extends MapViewPager.MultiAdapter {
 
-    public static final String[] PAGE_TITLES = { "England", "France", "Spain",
-            "Portugal", "Italy", "Belgium" };
+    public static final String[] PAGE_TITLES = { "Akshardham Temple", "Rashtrapati Bhavan", "National Museum",
+            "Jama Masjid", "India Gate and Rajpath", "Gurudwara Bangla Sahib" };
 
-    public static final String[] ENGLAND_TITLES = { "London" };
-    public static final String[] FRANCE_TITLES = { "Paris" };
-    public static final String[] SPAIN_TITLES = { "Barcelona", "Madrid", "Valencia" };
-    public static final String[] PORTUGAL_TITLES = { };
-    public static final String[] ITALY_TITLES = { "Milan", "Rome" };
-    public static final String[] BELGIUM_TITLES = { "Brussels" };
+    public static final String[] ENGLAND_TITLES = { "Akshardham Temple" };
+    public static final String[] FRANCE_TITLES = { "Rashtrapati Bhavan" };
+    public static final String[] SPAIN_TITLES = { "National Museum" };
+    public static final String[] PORTUGAL_TITLES = {"Jama Masjid"};
+    public static final String[] ITALY_TITLES = { "India Gate and Rajpath" };
+    public static final String[] BELGIUM_TITLES = { "Gurudwara Bangla Sahib" };
 
     public static final CameraPosition LONDON
-            = CameraPosition.fromLatLngZoom(new LatLng(51.5287352,-0.381784), 6f);
+            = CameraPosition.fromLatLngZoom(new LatLng(28.643851,77.299098), 6f);
     public static final CameraPosition PARIS
-            = CameraPosition.fromLatLngZoom(new LatLng(48.859,2.2074722), 6f);
+            = CameraPosition.fromLatLngZoom(new LatLng(28.614153,77.195962), 6f);
     public static final CameraPosition BARCELONA
-            = CameraPosition.fromLatLngZoom(new LatLng(41.3948976,2.0787274), 6f);
+            = CameraPosition.fromLatLngZoom(new LatLng(28.611799,77.219493), 6f);
     public static final CameraPosition MADRID
-            = CameraPosition.fromLatLngZoom(new LatLng(40.4381311,-3.8196227), 6f);
+            = CameraPosition.fromLatLngZoom(new LatLng(28.650594,77.230328), 6f);
+
     public static final CameraPosition VALENCIA
-            = CameraPosition.fromLatLngZoom(new LatLng(39.4079665,-0.5015975), 6f);
+            = CameraPosition.fromLatLngZoom(new LatLng(28.612912,77.22951), 6f);
     public static final CameraPosition MILAN
-            = CameraPosition.fromLatLngZoom(new LatLng(45.4628329,9.107692), 6f);
-    public static final CameraPosition ROME
-            = CameraPosition.fromLatLngZoom(new LatLng(41.9102415,12.3959121), 6f);
-    public static final CameraPosition BRUSSELS
-            = CameraPosition.fromLatLngZoom(new LatLng(50.8550625,4.3053499), 6f);
+            = CameraPosition.fromLatLngZoom(new LatLng(28.62025,77.218437), 6f);
+//    public static final CameraPosition ROME
+//            = CameraPosition.fromLatLngZoom(new LatLng(41.9102415,12.3959121), 6f);
+//    public static final CameraPosition BRUSSELS
+//            = CameraPosition.fromLatLngZoom(new LatLng(50.8550625,4.3053499), 6f);
 
     private LinkedList<CameraPosition> england;
     private LinkedList<CameraPosition> france;
@@ -64,11 +65,12 @@ public class MonumentAdapter extends MapViewPager.MultiAdapter {
         england.add(LONDON);
         france.add(PARIS);
         spain.add(BARCELONA);
-        spain.add(MADRID);
-        spain.add(VALENCIA);
-        italy.add(MILAN);
-        italy.add(ROME);
-        belgium.add(BRUSSELS);
+        portugal.add(MADRID);
+//        spain.add(MADRID);
+//        spain.add(VALENCIA);
+        italy.add(VALENCIA);
+      //  italy.add(ROME);
+        belgium.add(MILAN);
     }
 
     @Override
