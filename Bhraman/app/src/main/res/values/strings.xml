@@ -5,5 +5,13 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+<<<<<<< HEAD
     <string name="title_activity_main2">Main2Activity</string>
+=======
+    <string name="google_maps_key">AIzaSyBtwW4yaFR-tdHIBmotaAEHL9JSx21-JO8</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_monu">Map</string>
+>>>>>>> 3b402c89a420ba9cc5d17acd850e3548688b1e2b
 </resources>
