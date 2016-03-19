@@ -30,6 +30,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".MonuActivity"
             android:label="@string/title_activity_monu">
@@ -37,6 +38,11 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.cfi.bhraman.MainActivity" />
         </activity>
+
+        <activity android:name=".GroupsMainActivity"></activity>
+        <activity android:name=".PlaceDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
     </application>
 
 </manifest>

@@ -97,9 +97,9 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.my_profile) {
             // Handle the camera action
         } else if (id == R.id.nav_groups) {
-
+            startActivity(new Intent(MainActivity.this, GroupsMainActivity.class));
         } else if (id == R.id.nav_slideshow) {
-
+            startActivity(new Intent(MainActivity.this, PlaceDetailActivity.class));
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {
