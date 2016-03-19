@@ -2,7 +2,7 @@ package com.cfi.bhraman;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
+import android.util.Log;
 
 
 public class SummaryActivity extends AppCompatActivity {
@@ -11,6 +11,10 @@ public class SummaryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_summary);
+
+        Bundle b = this.getIntent().getExtras();
+        String date = b.getString("Date");
+        Log.i("Date", date);
 
     /*    VCard johnDoe = new VCard("John Doe")
                 .setEmail("john.doe@example.org")
