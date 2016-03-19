@@ -1,8 +1,10 @@
 package com.cfi.bhraman;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,8 +15,21 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.cfi.bhraman.adapter.MonumentAdapter;
+import com.github.nitrico.mapviewpager.MapViewPager;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    private GoogleMap mMap;
+    private ViewPager viewPager;
+    private MapViewPager mvp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +42,7 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                startActivity(new Intent(MainActivity.this, MonuActivity.class));
             }
         });
 
@@ -98,4 +112,6 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+
 }
