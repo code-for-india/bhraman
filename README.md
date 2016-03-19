@@ -1,3 +1,11 @@
-# bhraman
+# Bhraman by team Indian
 
-instructions to be included in the QR code activity http://presidentofindia.nic.in/visit-to-rashtrapati-bhavan.htm
+Challenge : Entery into public Monuments monitoring
+
+## Team 
+
+- Ravi Suhag 
+- Saurav Tomar
+- Yogesh Kumar
+- Aanchal Somani
+- Chhavi P Gupta 
