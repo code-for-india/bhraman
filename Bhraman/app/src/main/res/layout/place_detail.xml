@@ -80,7 +80,7 @@
                         android:src="@drawable/ic_date_range_blue_grey_700_36dp"/>
 
                     <EditText
-                        android:layout_width="wrap_content"
+                        android:layout_width="50dp"
                         android:layout_height="wrap_content"
                         android:id="@+id/edit_date"
                         android:focusable="false"
@@ -102,7 +102,7 @@
                             android:src="@drawable/ic_av_timer_blue_grey_700_36dp"/>
 
                         <EditText
-                            android:layout_width="wrap_content"
+                            android:layout_width="50dp"
                             android:layout_height="wrap_content"
                             android:id="@+id/edit_time"
                             android:focusable="false"
@@ -144,9 +144,35 @@
 
             </android.support.v7.widget.CardView>
 
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:id="@+id/choose_others"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                <TextView
+                    android:layout_marginLeft="50dp"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:text="Add Members"
+                    android:layout_height="match_parent" />
 
 
 
+                    <ImageView
+                        android:layout_marginLeft="80dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_group_add_blue_grey_700_36dp"/>
+                </LinearLayout>
+
+
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/imageview" />
 
         </LinearLayout>
 
@@ -156,7 +182,7 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:layout_gravity="bottom|right"
-        android:src="@drawable/ic_menu_send"
+        android:src="@drawable/ic_check_white_24dp"
         android:layout_margin="@dimen/fab_margin"
         android:clickable="true"/>
 

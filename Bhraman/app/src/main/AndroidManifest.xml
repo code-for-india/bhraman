@@ -40,11 +40,13 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.cfi.bhraman.MainActivity" />
         </activity>
+
         <activity android:name=".GroupsMainActivity" />
         <activity
             android:name=".PlaceDetailActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".AddNewMember"></activity>
+        <activity android:name=".SummaryActivity"></activity>
     </application>
 
 </manifest>
