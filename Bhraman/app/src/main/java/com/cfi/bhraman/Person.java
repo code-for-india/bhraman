@@ -5,11 +5,11 @@ package com.cfi.bhraman;
  */
 public class Person {
 
-    public Person(String name, String id, int imageResouce) {
+    public Person(String name, String number, String email) {
 
         this.name = name;
-        this.id = id;
-        this.imageResouce = imageResouce;
+        this.number = number;
+        this.email = email;
     }
 
     public Person(String name, String id) {
@@ -42,7 +42,17 @@ public class Person {
         this.imageResouce = imageResouce;
     }
 
+    public String getNumber() {
+        return number;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
     String name;
+    String number;
     String id;
     int imageResouce;
+    String email;
 }

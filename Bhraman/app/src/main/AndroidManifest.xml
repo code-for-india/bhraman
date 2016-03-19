@@ -23,22 +23,16 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
-        <activity android:name=".MyProfileActivity">
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".MyProfileActivity"></activity>
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".LoginActivity">
-        </activity>
-        <activity android:name=".SignUpActivity"></activity>
-
-
+        <activity android:name=".SignUpActivity" />
         <activity
             android:name=".MonuActivity"
             android:label="@string/title_activity_monu">
@@ -46,12 +40,11 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.cfi.bhraman.MainActivity" />
         </activity>
-
-
-        <activity android:name=".GroupsMainActivity"></activity>
-        <activity android:name=".PlaceDetailActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-
+        <activity android:name=".GroupsMainActivity" />
+        <activity
+            android:name=".PlaceDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AddNewMember"></activity>
     </application>
 
 </manifest>

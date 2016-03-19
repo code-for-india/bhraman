@@ -47,10 +47,20 @@
             android:ellipsize="end"
             android:maxLines="1"
             android:paddingRight="16dp"
-            android:id="@+id/person_id"
+            android:id="@+id/number"
 
-            android:text="Yesterday, 4:11 PM"
+            android:text="phone"
           />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingRight="16dp"
+            android:id="@+id/email"
+
+            android:text="email"
+            />
 
     </LinearLayout>
 

@@ -37,6 +37,14 @@ public class SignUpActivity extends AppCompatActivity {
                 showImageChooser();
             }
         });
+        Button signup = (Button) findViewById(R.id.signup);
+        signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(SignUpActivity.this, MainActivity.class);
+                startActivity(i);
+            }
+        });
     }
 
     private void showImageChooser() {

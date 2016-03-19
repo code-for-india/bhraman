@@ -1,6 +1,7 @@
 package com.cfi.bhraman;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
@@ -57,9 +58,8 @@ public class GroupsMainActivity extends AppCompatActivity {
 
         int id = item.getItemId();
         if(id == R.id.add_member){
-                persons.add(new Person("Ramesh", "as45154"));
-            adapter.notifyDataSetChanged();
-
+            Intent i = new Intent(GroupsMainActivity.this, AddNewMember.class);
+            startActivityForResult(i, 1);
 
         }
         return true;
@@ -81,10 +81,12 @@ public class GroupsMainActivity extends AppCompatActivity {
             View view = LayoutInflater.from(context).inflate(R.layout.groups_item_layout, null, false);
             Person person = persons.get(position);
             TextView name = (TextView)view.findViewById(R.id.name_person);
-            TextView id= (TextView)view.findViewById(R.id.person_id);
+            TextView number= (TextView)view.findViewById(R.id.number);
+            TextView email = (TextView) view.findViewById(R.id.email);
 
             name.setText(person.getName());
-            id.setText(person.getId());
+            number.setText(person.getNumber());
+            email.setText(person.getEmail());
          /*   if(person.getImageResouce()==0) {
                 ImageView im =(ImageView) view.findViewById(R.id.person_image);
                 im.setImageResource(person.getImageResouce());
@@ -96,6 +98,18 @@ public class GroupsMainActivity extends AppCompatActivity {
         @Override
         public int getCount() {
             return persons.size();
+        }
+    }
+
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        // Check which request we're responding to
+        if (requestCode == 1) {
+            // Make sure the request was successful
+            if (resultCode == 1) {
+                persons.add(new Person(data.getStringExtra("name"),data.getStringExtra("number"),
+                        data.getStringExtra("email")));
+                adapter.notifyDataSetChanged();
+            }
         }
     }
 }
